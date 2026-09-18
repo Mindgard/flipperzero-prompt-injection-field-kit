@@ -1,0 +1,16 @@
+App(
+    appid="pifk",
+    name="Prompt Injection Field Kit",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="pifk_app_main",
+    # Restrict to src/ so the host-side test harness in tests/ (which has
+    # its own main()) is not pulled into the FAP.
+    sources=["src/*.c", "src/**/*.c"],
+    stack_size=4 * 1024,
+    fap_category="Tools",
+    fap_version=(1, 1),
+    fap_icon="images/icon_10x10.png",
+    fap_icon_assets="images",
+    fap_description="AI prompt injection field kit — browse, execute, and remote-control prompt injection payloads via BadUSB, NFC, BLE, GPIO, and QR.",
+    fap_weburl="https://github.com/Mindgard/flipperzero-prompt-injection-field-kit",
+)

@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+._*
+
+# Flipper build output
+.ufbt/
+build/
+
+# Host-side test binaries and artefacts
+tests/test_qr
+tests/*.o
+/tmp/*.pbm
+*.pbm
+
+# Editor / tooling
+*.swp
+.idea/
+.vscode/
+compile_commands.json
+
+# ufbt local state
+.ufbt/
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code local settings
+.claude/settings.local.json
